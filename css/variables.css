@@ -1,0 +1,26 @@
+:root {
+    --bg-color: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --primary-color: #3b82f6;
+    --primary-hover: #2563eb;
+    
+    /* Colores de matriz y estados */
+    --cell-empty: #cbd5e1;
+    --cell-success: #10b981;
+    --cell-wildcard: #94a3b8;
+    --cell-fail: #ef4444;
+    
+    --border-color: #e2e8f0;
+    --modal-bg: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,148 @@
+.roadmap-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01);
+}
+
+.roadmap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.roadmap-track-container {
+    padding: 40px 10px 10px 10px; /* Espacio superior amplio para que el bocadillo respire */
+}
+
+.roadmap-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* El camino serpentea hacia abajo sin generar scroll molesto */
+    position: relative;
+}
+
+.roadmap-step {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: #64748b;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.roadmap-step.passed {
+    background: #d1fae5;
+    color: #065f46;
+    border: 2px solid var(--cell-success);
+}
+
+.roadmap-step.current {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+    transform: scale(1.1);
+}
+
+.roadmap-step.flag-node {
+    border: 2px dashed #f59e0b;
+    background: #fffbeb;
+    color: #b45309;
+    cursor: pointer;
+}
+
+.roadmap-step.flag-node.unlocked {
+    border: 2px solid #f59e0b;
+    background: #f59e0b;
+    color: white;
+}
+
+/* El bocadillo corregido, flotando arriba en el espacio expandido */
+.reward-tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f172a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 999; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.reward-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #0f172a;
+}
+
+.flag-node:hover .reward-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.roadmap-connection {
+    height: 4px;
+    width: 15px;
+    background: #e2e8f0;
+    flex-shrink: 0;
+    margin: 0 -2px;
+}
+
+.roadmap-connection.passed {
+    background: var(--cell-success);
+}
+
+/* Contenedor de navegación del carrusel */
+.roadmap-navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-nav-roadmap {
+    background: #f1f5f9;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.btn-nav-roadmap:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-nav-roadmap:active {
+    transform: scale(0.9);
+}

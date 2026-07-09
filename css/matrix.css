@@ -1,0 +1,56 @@
+.matrix-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 35px;
+}
+
+.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.matrix-table th, .matrix-table td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: center;
+}
+
+.matrix-table th { 
+    background-color: #f8fafc; 
+    color: #64748b; 
+}
+
+.habit-name-cell {
+    text-align: left !important;
+    font-weight: 600;
+    min-width: 180px;
+    position: sticky;
+    left: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-box.pre-creation { background-color: #e2e8f0; color: #94a3b8; }
+.cell-box.pre-creation::after { content: "-"; }
+.cell-box.success { background-color: var(--cell-success); color: white; }
+.cell-box.success::after { content: "✓"; font-weight: bold; }
+.cell-box.wildcard { background-color: var(--cell-wildcard); }
+.cell-box.wildcard::after { content: "•"; color: white; font-size: 16px; }
+.cell-box.fail { background-color: var(--cell-fail); color: white; }
+.cell-box.fail::after { content: "✕"; font-weight: bold; font-size: 11px; }
+.cell-box.empty { background-color: var(--cell-empty); }

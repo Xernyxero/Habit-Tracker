@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker Pro</title>
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/today-panel.css">
+    <link rel="stylesheet" href="css/matrix.css">
+    <link rel="stylesheet" href="css/roadmap.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>Habit Tracker Pro <span style="font-size:1.2rem; color:var(--primary-color);">🕹️ Gamificado</span></h1>
+            <button class="btn-main" id="openModalBtn">Añadir nuevo hábito</button>
+        </div>
+
+        <div class="today-panel">
+            <h2>¿Qué has cumplido HOY?</h2>
+            <div id="todayButtonsContainer" class="today-buttons-container"></div>
+        </div>
+
+        <div style="margin-top:20px;">
+            <h2>Matriz de Progreso</h2>
+            <div class="matrix-wrapper">
+                <table class="matrix-table">
+                    <thead id="matrixHead"></thead>
+                    <tbody id="matrixBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="margin-top:30px;">
+            <h2>Hojas de Ruta de Motivación (Camino de Recompensas)</h2>
+            <div style="font-size:13px; color:#64748b; margin-bottom:15px;">
+                ⭐ Cada día <strong>Completado (✓)</strong> sumas <strong>+1 paso</strong>. Cada día <strong>Fallado (✕)</strong> el castigo te hace retroceder <strong>-2 pasos</strong>. ¡Pasa el ratón por las banderas 🚩 para ver tus premios!
+            </div>
+            <div id="roadmapsContainer"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <h2>Nuevo Objetivo</h2>
+            <form id="habitForm">
+                <div class="form-group">
+                    <label for="habitName">Nombre del Hábito</label>
+                    <input type="text" id="habitName" placeholder="Ej. Ir al gimnasio" required>
+                </div>
+                <div class="form-group">
+                    <label for="habitQty">Días por semana mínimos</label>
+                    <select id="habitQty">
+                        <option value="7">Todos los días (7 días)</option>
+                        <option value="6">6 días</option>
+                        <option value="5">5 días</option>
+                        <option value="4" selected>4 días</option>
+                        <option value="3">3 días</option>
+                        <option value="2">2 días</option>
+                        <option value="1">1 día</option>
+                    </select>
+                </div>
+
+                <div class="reward-custom-section">
+                    <p style="margin:0 0 8px 0; font-weight:bold; font-size:13px; color:#334155;">Recompensas personalizadas (Opcional):</p>
+                    <div class="form-group">
+                        <label>Meta Día 3 (Por defecto: Café especial / Serie)</label>
+                        <input type="text" id="r3" placeholder="Tu premio personalizado...">
+                    </div>
+                    <div class="form-group">
+                        <label>Meta Día 10 (Por defecto: Cena favorita / Libro nuevo)</label>
+                        <input type="text" id="r10" placeholder="Tu premio personalizado...">
+                    </div>
+                    <div class="form-group">
+                        <label>Meta Día 24 (Por defecto: Día libre / Masaje capricho)</label>
+                        <input type="text" id="r24" placeholder="Tu premio personalizado...">
+                    </div>
+                    <div class="form-group">
+                        <label>Cada +30 días (Por defecto: Hucha acumulativa mensual)</label>
+                        <input type="text" id="r30" placeholder="Tu premio personalizado...">
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" id="closeModalBtn">Cancelar</button>
+                    <button type="submit" class="btn-main">Crear Objetivo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

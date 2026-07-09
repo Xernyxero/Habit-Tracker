@@ -1,0 +1,32 @@
+.today-panel {
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.today-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn-today-check {
+    padding: 12px 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-today-check.active {
+    background-color: var(--cell-success);
+    border-color: var(--cell-success);
+    color: white;
+}
