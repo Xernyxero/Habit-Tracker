@@ -1,10 +1,16 @@
-# 🕹️ Habit Tracker Pro (Gamificado & Modular)
+# 🕹️ Habit Monk 🧘
 
-¡Bienvenido a **Habit Tracker Pro**! Este es un gestor de hábitos e historial de progreso diseñado bajo principios de gamificación. No solo registra lo que haces, sino que calcula tu consistencia mediante un sistema de **Puntos de Esfuerzo** y te guía a través de una **Hoja de Ruta (Roadmap)** interactiva donde desbloqueas recompensas reales a medida que mantienes tus rachas.
-
-El proyecto está construido con **HTML5, CSS3 nativo y JavaScript moderno (ES6+)**, organizado bajo una arquitectura limpia y modular sin dependencias externas.
+¡Bienvenido a **Habit Monk**! Este es un gestor de hábitos e historial de progreso diseñado bajo principios de gamificación. No solo registra lo que haces, sino que calcula tu consistencia mediante un sistema de **Puntos de Esfuerzo** y te guía a través de una **Hoja de Ruta (Roadmap)** interactiva donde desbloqueas recompensas reales a medida que mantienes tus rachas.
 
 ---
+
+## 🤖 Autoría, Créditos y Co-creación (IA)
+
+> 💡 **Nota del Autor:** La totalidad del código fuente de esta aplicación (estructurado en HTML5, CSS3 modular y la lógica de negocio en JavaScript ES6+) ha sido generada utilizando el modelo de lenguaje avanzado **Gemini de Google**. 
+> 
+> Sin embargo, el verdadero mérito y valor de este desarrollo radica en el proceso de **dirección, diseño conceptual e ingeniería de instrucciones (prompting)**. Mi rol como autor ha sido el de guiar meticulosamente a la Inteligencia Artificial en todo momento: definiendo las reglas de negocio (como el estado *stand-by* diario o las penalizaciones), estructurando la arquitectura limpia por módulos, detectando y refinando bugs, y pivotando el diseño de la interfaz hasta alcanzar exactamente el código y la experiencia de usuario deseados.
+
+Este proyecto es un testimonio real de cómo la IA, bajo una dirección humana clara y estratégica, puede actuar como el copiloto técnico definitivo para transformar una idea en un software funcional y ordenado.
 
 ## 🚀 Características Principales
 
