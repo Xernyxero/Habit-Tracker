@@ -1,5 +1,7 @@
 # 🕹️ Habit Monk 🧘
 
+> 🚀 **Despliegue en vivo:** ¡Prueba la aplicación ya mismo en [Netlify] (https://habitmonk.netlify.app/)!
+
 ¡Bienvenido a **Habit Monk**! Este es un gestor de hábitos e historial de progreso diseñado bajo principios de gamificación. No solo registra lo que haces, sino que calcula tu consistencia mediante un sistema de **Puntos de Esfuerzo** y te guía a través de una **Hoja de Ruta (Roadmap)** interactiva donde desbloqueas recompensas reales a medida que mantienes tus rachas.
 
 ---
